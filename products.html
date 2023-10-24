@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - EcoSync Smart Garden</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="EcoSync Logo">
+        <nav> 
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="products.html">ORDER</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button id="menu-toggle" onclick="toggleNav()">☰</button>
+    </header>
+    <div class="order-container">
+       
+        <div class="order-main">
+            <h2>Secure Your EcoSync Smart Garden</h2>
+            <p>Take the first step toward effortless and rewarding gardening with the EcoSync Smart Garden. Choose the kit that suits your needs and preferences, and place your order securely through our online order form.</p>
+        </div>
+        <div class="order-sidebar1">
+            <h2>Order Now</h2>
+            <p>Transform your gardening experience with the EcoSync Smart Garden. Choose the kit that suits your needs and preferences, and place your order securely through our online order form. We will send you a confirmation email along with a link for payment.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="product">Select Product:</label>
+                <select id="product" name="product">
+                    <option value="starter">EcoSync Smart Garden Starter Kit - $29.99</option>
+                    <option value="deluxe">EcoSync Smart Garden Deluxe Kit - $49.99</option>
+                    <option value="premium">EcoSync Smart Garden Premium Kit - $99.99</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+        <div class="order-sidebar">
+            <h2>Customer Reviews</h2>
+            <p>See what our satisfied customers have to say about their EcoSync Smart Gardens:</p>
+            <blockquote>"I can't believe how easy gardening has become with EcoSync. My plants are thriving, and it's all thanks to this amazing system!" - Sarah</blockquote>
+            <blockquote>"I ordered the Deluxe Kit, and I couldn't be happier. It's a game-changer for anyone who loves gardening." - David</blockquote>
+        </div>
+    </div>
+    <footer>
+        <div class="mailing-list">
+            <h2>Join Our Mailing List</h2>
+            <p style="color: grey;">Stay updated with our latest products and gardening tips.</p>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+            <p>&copy; 2023 EcoSync Smart Garden. All rights reserved. <br>(this is fake site for educational purposes, please don't sue.)</p>
+    </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

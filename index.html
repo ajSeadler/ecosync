@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSync</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="EcoSync Logo">
+        <nav> 
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="products.html">ORDER</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button id="menu-toggle" onclick="toggleNav()">☰</button>
+    </header>
+    
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EcoSync Smart Garden</h1>
+            <p>Transform your gardening experience with our state-of-the-art smart garden system.</p>
+            <a href="#message" class="cta-button">Learn More</a>
+        </div>
+        <img src="EcoSync.jpg" alt="EcoSync Smart Garden">
+    </div>
+    
+    <div id="message">
+        <h1></h1>
+    </div>
+    <div class="holy-grail">
+        <div class="sidebar1">
+            <h2>Gardening Tips</h2>
+            <ul>
+                <li>Planting Tip: Ensure that your plants have enough space to grow by spacing them appropriately.</li>
+                <li>Watering Advice: Water your plants in the morning to prevent evaporation loss during hot afternoons. Kidding, EcoSync does this for you!</li>
+                <li>Common Pests: Learn how to identify and combat common garden pests to protect your plants.</li>
+            </ul>
+        
+            <h2>Product Promotions</h2>
+            <p>Check out our latest promotions and discounts on the EcoSync Smart Garden. Don't miss out on the opportunity to enhance your gardening experience!</p>
+        
+            <h2>Customer Reviews</h2>
+            <p>See what our customers have to say about the EcoSync Smart Garden:</p>
+            <blockquote>"I absolutely love my EcoSync Smart Garden! It's made gardening so easy and enjoyable." - Emily</blockquote>
+            <blockquote>"This product exceeded my expectations. I'm growing beautiful herbs in my kitchen now." - John</blockquote>
+        </div>
+        <div id="no"></div>
+        <div class="main-content">
+              <h2 id="product">EcoSync Smart Garden</h2>
+            <p>The EcoSync Smart Garden is the ultimate solution for all your gardening needs, designed to provide you with a delightful and effortless gardening experience. Whether you are a seasoned gardener or a complete beginner, this smart garden system is here to make your life greener, easier, and more enjoyable.</p>
+        
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Automated Care: The EcoSync Smart Garden takes the guesswork out of gardening. It monitors your plants' needs and automatically adjusts light, water, and nutrients to ensure optimal growth. With the intuitive mobile app, you can track the health and progress of your plants in real-time.</li>
+                <li>Indoor and Outdoor Versatility: Whether you have limited space indoors or want to enhance your outdoor garden, the EcoSync Smart Garden can be used in various environments. It's sleek and stylish, making it a perfect fit for your home or patio.</li>
+                <li>Grow Anything: This smart garden isn't limited to just one type of plant. It accommodates a wide range of herbs, vegetables, flowers, and more. You can cultivate your favorite culinary herbs, colorful flowers, or even exotic plants with ease.</li>
+                <li>Energy-Efficient LED Lighting: The EcoSync Smart Garden features energy-efficient LED lights that mimic natural sunlight. These lights promote photosynthesis and provide the perfect amount of light for each stage of your plants' growth, from germination to harvest.</li>
+                <li>Water-Saving System: Its intelligent watering system ensures your plants receive just the right amount of moisture, preventing overwatering or underwatering. The water reservoir is easy to refill, reducing the frequency of maintenance.</li>
+                <li>Sustainable and Eco-Friendly: We care about the environment, and so does the EcoSync Smart Garden. It's made with sustainable materials and encourages sustainable gardening practices. You'll reduce plastic waste by using our biodegradable seed pods.</li>
+                <li>Community and Learning: Join our community of garden enthusiasts and share your experiences. The EcoSync app provides gardening tips, tutorials, and even connects you with experts who can offer personalized advice to help you succeed in your gardening journey.</li>
+            </ul>
+        
+            <h3>Why Choose EcoSync Smart Garden:</h3>
+            <p>The EcoSync Smart Garden is not just a product; it's a lifestyle. Embrace the joy of nurturing life and enjoy fresh, organic produce at your fingertips. Say goodbye to the hassle of gardening and hello to a greener, more sustainable future. Whether you're growing a few herbs for your favorite dishes or creating a lush garden retreat, EcoSync Smart Garden is here to make it all possible.</p>
+        
+            <p>The EcoSync Smart Garden is not just about growing plants; it's about growing a passion for green living. Elevate your gardening game and create a natural oasis in your home with this innovative, eco-friendly solution.</p>
+        </div>
+        
+        <div class="sidebar2">
+            <h2>Garden Maintenance Checklist</h2>
+            <ul>
+                <li>Pruning: Regularly trim and prune your plants to encourage healthy growth.</li>
+                <li>Weeding: Remove weeds that compete with your plants for resources.</li>
+                <li>Fertilizing: Provide the necessary nutrients to your garden for robust growth.</li>
+            </ul>
+        
+            <h2>Upcoming Events</h2>
+            <p>Join our upcoming gardening events and workshops to enhance your gardening skills. Stay updated with the latest trends and techniques.</p>
+        
+            <h2>Gardening FAQs</h2>
+            <p>Got questions about gardening, the EcoSync Smart Garden, or plant care? We have the answers you need.</p>
+        
+            <h2>Meet the Team</h2>
+            <p>Get to know the passionate individuals behind the EcoSync Smart Garden. Meet our experts who are dedicated to making your gardening experience exceptional.</p>
+        
+            <h2>Garden Gallery</h2>
+            <p>Explore our Garden Gallery to see stunning images of gardens created with the EcoSync Smart Garden. Get inspired to create your green oasis!</p>
+        </div>
+        
+    </div>
+    <div class="mailing-list">
+        <h2>Join Our Mailing List</h2>
+        <p>Stay updated with our latest products and gardening tips.</p>
+        <form>
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    
+    <!-- Copyright Footer -->
+    <footer>
+        <p>&copy; 2023 EcoSync Smart Garden. All rights reserved. <br>(this is fake site for educational purposes, please don't sue.)</p>
+    </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

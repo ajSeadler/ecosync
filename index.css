@@ -1,0 +1,828 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styles */
+/* Header styles */
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; /* Distribute items to the left and right */
+    align-items: center; /* Vertically center items */
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2cb4a7;
+    margin: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Hero section styles */
+/* Hero section styles */
+.hero {
+    position: relative;
+    background-image: url('green.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    min-height: calc(100vh - 50px); /* Subtract the header height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.hero img {
+    max-width: 100%;
+    margin-top: 8%;
+    height: auto;
+    border: 1px solid #44444481;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+
+/* Message section */
+#message {
+    text-align: center;
+    background-color: #444;
+    /* Dark Charcoal */
+    color: #fff;
+    padding: 20px;
+}
+
+#message h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Holy Grail layout container */
+/* Holy Grail layout container */
+.holy-grail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 10%; /* Add top padding to avoid overlap with the header */
+    margin: 10px;
+}
+
+
+/* Sidebar 1 */
+.sidebar1 {
+    background-color: #333;
+    /* Dark Gray */
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Sidebar 1a styles */
+.sidebar1a {
+    background-color: #f7f7f7;
+    /* Light gray background */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow */
+}
+
+.sidebar1a h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+.sidebar1a dl {
+    font-size: 16px;
+}
+
+.sidebar1a dt {
+    font-weight: 600;
+    margin-top: 20px;
+    color: #009688;
+    /* Teal text color for questions */
+}
+
+.sidebar1a dd {
+    color: #666;
+    /* Slightly lighter text color for answers */
+    margin: 10px 0;
+}
+
+.sidebar1a dt::before {
+    content: "\25B6\00a0";
+    /* Unicode character for a right arrow and space */
+    color: #009688;
+}
+
+.sidebar1a dl dt:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #009688;
+}
+
+/* Add hover effect for questions */
+.sidebar1a dt:hover+dd {
+    color: #000;
+    /* Dark text for answers when hovering over questions */
+}
+
+/* Add transition for smooth hover effects */
+.sidebar1a dt,
+.sidebar1a dd {
+    transition: color 0.3s ease;
+}
+
+
+/* Sidebar 2 */
+.sidebar2 {
+    background-color: #333;
+    /* Dark Gray */
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #009688;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* List items */
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    color: #f5f5f5;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #444;
+    /* Dark Charcoal */
+    border-left: 4px solid #009688;
+    /* Teal */
+}
+
+/* Links */
+a {
+    color: #009688;
+    /* Teal */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mailing List Sign-Up */
+/* Mailing List Sign-Up */
+.mailing-list {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+}
+
+.mailing-list h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mailing-list p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mailing-list form {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+}
+
+.mailing-list input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Add spacing between input and button */
+}
+
+.mailing-list button {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mailing-list button:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+
+/* Copyright Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* About page specific styles */
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.about-description {
+    margin: 10px 0;
+    text-align: center;
+    color: #009688;
+    /* Adjust the color as needed */
+}
+
+.about-paragraph {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.about-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.about-list {
+    list-style: disc;
+    margin-left: 20px;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10%;
+}
+
+/* Order sidebar styles */
+.order-sidebar {
+    background-color: #f5f5f5; /* Pale Gold */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.order-sidebar h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.order-sidebar form {
+    margin: 20px 0;
+}
+
+.order-sidebar label {
+    font-weight: 600;
+}
+
+.order-sidebar input,
+.order-sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-sidebar button {
+    background-color: #009688;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-sidebar button:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+.order-sidebar1 {
+    background-color: #f0e68c; /* Pale Gold */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.order-sidebar1 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.order-sidebar1 form {
+    margin: 20px 0;
+}
+
+.order-sidebar1 label {
+    font-weight: 600;
+}
+
+.order-sidebar1 input,
+.order-sidebar1 select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-sidebar1 button {
+    background-color: #009688;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-sidebar1 button:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+/* Order main styles */
+.order-main {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.order-main h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20.8%;
+}
+
+.contact h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/* Contact cards container */
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+
+/* Media query for screens with a maximum width of 768px */
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+
+    /* Header styles */
+    nav {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+        background-color: #333; /* Dark Gray */
+        padding: 10px;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    /* Make the navigation menu visible when the button is clicked */
+    nav.active {
+        display: flex;
+        margin-top: 10%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #009688;
+        color: #fff;
+    }
+
+
+/* Improved hero section */
+.hero {
+    position: relative;
+    background-image: url('green.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 10px 0;
+    animation: fadeInUp 1s ease 0.5s;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: fadeInUp 1s ease 1s;
+}
+
+.hero img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #44444481;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+/* CSS animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    /* Message section */
+    #message {
+        padding: 10px;
+    }
+
+    #message h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    /* Holy Grail layout container */
+    .holy-grail {
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 15%;
+    }
+
+    /* Sidebar 1 */
+    .sidebar1 {
+        width: 100%; /* Make the sidebar full width */
+        margin: 10px 0; /* Add spacing between sidebars */
+    }
+
+    /* Sidebar 2 */
+    .sidebar2 {
+        width: 100%; /* Make the sidebar full width */
+        margin: 10px 0; /* Add spacing between sidebars */
+    }
+
+    /* Main content styles */
+    .main-content {
+        width: 100%; /* Make the main content full width */
+        margin: 10px 0; /* Add spacing between the main content and sidebars */
+    }
+
+    /* Mailing List Sign-Up */
+    .mailing-list {
+        padding: 20px;
+    }
+
+    .mailing-list h2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .mailing-list p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .mailing-list input,
+    .mailing-list button {
+        width: 100%; /* Make form elements full width */
+    }
+
+    /* Copyright Footer */
+    footer {
+        padding: 5px 0;
+    }
+
+    /* About page specific styles */
+    .about-title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .about-description {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .about-paragraph {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .about-subtitle {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .about-list {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    /* Order container */
+    .order-container {
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 22%;
+    }
+
+    /* Order sidebar styles */
+    .order-sidebar,
+    .order-sidebar1 {
+        width: 100%; /* Make the sidebar full width */
+        margin: 10px 0; /* Add spacing between the sidebar and main content */
+    }
+
+    .order-sidebar h2,
+    .order-sidebar1 h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .order-sidebar input,
+    .order-sidebar select,
+    .order-sidebar button,
+    .order-sidebar1 input,
+    .order-sidebar1 select,
+    .order-sidebar1 button {
+        width: 100%; /* Make form elements full width */
+    }
+
+    /* Order main styles */
+    .order-main {
+        width: 100%; /* Make the main content full width */
+        margin: 10px 0; /* Add spacing between the main content and sidebar */
+    }
+
+    .order-main h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    /* Contact section */
+    #contact {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20%;
+        margin-top: 26%;
+    }
+
+    .contact h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin: 10px 0;
+    }
+
+    /* Form container */
+    #form {
+        padding: 10px; /* Adjust padding for the form container */
+    }
+    #menu-toggle {
+        background: #009688; /* Background color for the button */
+        color: #fff; /* Text color for the button */
+        font-size: 20px; /* Increase the font size to make it bigger */
+        padding: 10px 20px; /* Increase padding for more size */
+        border: none;
+        border-radius: 10px; /* Rounded corners for a button-like look */
+        cursor: pointer;
+    }
+    
+    /* Style for the menu icon when active */
+    #menu-toggle.active {
+        background-color: transparent; /* Clear background when active */
+        color: #fff;
+    }
+    
+    /* Add a transition for smooth background and icon color change */
+    #menu-toggle.active:hover {
+        color: #2cb4a7; /* Change to a different color when hovered */
+        background-color: #009688; /* Change background color when hovered */
+    }
+
+}
+
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+}

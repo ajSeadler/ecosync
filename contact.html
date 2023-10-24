@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="EcoSync Logo">
+        <nav> 
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="products.html">ORDER</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button id="menu-toggle" onclick="toggleNav()">☰</button>
+    </header>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+               
+                <p>123 Green Street<br>Portland, OR 97201<br>United States</p>
+            </div>
+            <div class="contact-item">
+               
+                <p>Email: info@ecosyncgarden.com</p>
+            </div>
+            <div class="contact-item">
+               
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <h2>Contact Form</h2>
+        <form id="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+       
+            <p>&copy; 2023 EcoSync Smart Garden. All rights reserved. <br>(this is fake site for educational purposes, please don't sue.)</p>
+    </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
